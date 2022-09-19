@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .nav-link.active {
+        background-color: black;
+        color: white !important;
+      }
+
+      .nav-link:hover {
+        background-color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="p-2 m-0">
+          <img
+            class="img-responsive"
+            src="burger_logo.png"
+            alt="burger"
+            style="max-width: 50px"
+          />
+        </div>
+        <!-- <a class="navbar-brand" href="#">DAS</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="file:///C:/Users/Device%20User/Desktop/Bootcamp/html/act21/order.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="file:///C:/Users/Device%20User/Desktop/Bootcamp/html/act21/order.html"
+                >Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="file:///C:/Users/Device%20User/Desktop/Bootcamp/html/registration2.html?file+upload="
+                >Register</a
+              >
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbar-dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Education</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Primary</a></li>
+                  <li><a class="dropdown-item" href="#">Secondary</a></li>
+                  <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                  <li><a class="dropdown-item" href="#">Graduate</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Seminars</a></li>
+                  <li><a class="dropdown-item" href="#">Training</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1">Shop</a>
+              </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for...."
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div
+          id="carousel-captions"
+          class="carousel slide"
+          data-bs-interval="3500"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="burgerrrr.jpg" class="d-block w-100" alt="Bliss" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Burger</h1>
+                <p>More Than Just Your Average Burger.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="pizzaaa.jpg" class="d-block w-100" alt="Bliss" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Pizza</h1>
+                <p>Perfect pizzas from edge to edge.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="lasagnaaaa.jpg" class="d-block w-100" alt="Bliss" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Lasagna</h1>
+                <p>Celebrate your occasion with some Lasagna.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-captions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-captions"
+        data-bs-slide="next"
+      >
+        <span class="carouse-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div class="text-center p-3">
+      <h1>Frequently Asked Questions</h1>
+    </div> -->
+
+    <div class="container">
+      <!-- <div class="row">
+        <p>
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapse-item"
+            role="button"
+          >
+            Read
+          </a>
+        </p>
+        <div class="collapse" id="collapse-item">
+          <p>This is the paragraph text.</p>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="p-3">
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="accordion" id="accordion-panel">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-one">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-1"
+                aria-expanded="true"
+                aria-controls="collapse-one"
+              >
+                Where are you located?
+              </button>
+            </h2>
+            <div
+              id="collapse-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-1"
+              data-bs-parent="#accordion-panel"
+            >
+              <div class="accordion-body">
+                <p>
+                  We are located in Taguig, Pasig City, next to St. Joseph
+                  Funeral Homes!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-one">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-one"
+                aria-expanded="true"
+                aria-controls="collapse-one"
+              >
+                What times are you open?
+              </button>
+            </h2>
+            <div
+              id="collapse-one"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-one"
+              data-bs-parent="#accordion-panel"
+            >
+              <div class="accordion-body">
+                <p>
+                  We are all year round 24/7, except for weekends, holidays, and
+                  9:00 PM - 9:00 AM daily.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-one">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-one"
+                aria-expanded="true"
+                aria-controls="collapse-one"
+              >
+                What food do you offer?
+              </button>
+            </h2>
+            <div
+              id="collapse-one"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-one"
+              data-bs-parent="#accordion-panel"
+            >
+              <div class="accordion-body">
+                <p>
+                  We offer classic American food, such as burgers, hotdogs,
+                  spaghetti, Chinese food, adobo, and curry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid bg-white p-3">
+      <div class="d-flex justify-content-center gap-3">
+        <div class="">
+          <a href="https://www.facebook.com/">
+            <img src="facebookk.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+
+        <div class="">
+          <a href="https://twitter.com/">
+            <img src="twitterr.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+
+        <div class="">
+          <a
+            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3F__coig_login%3D1"
+          >
+            <img src="instagramm.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+
+        <div class="">
+          <a href="https://www.pinterest.ph/">
+            <img src="pinterestt.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+
+        <div class="">
+          <a href="https://www.linkedin.com/">
+            <img src="inn.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+
+        <div class="">
+          <a href="https://www.youtube.com/">
+            <img src="youtubee.png" alt="" style="max-width: 50px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
